@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    color: black;
+    height: 100%;
+}
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/*******************************************************************************************************************************************************************/
+/*Styling for overall project. Every div in a div called "container". Bad wording, I know...*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/*******************************************************************************************************************************************************************/
+/*Styling for the help button on the top right of the screen:*/
+
+.help-button{
+    position: fixed;
+    right: 5px;
+    background-color: antiquewhite;
+    padding: 3px;
+    top: 5px;
+    opacity: 50%;
+    -webkit-transition: all is ease-in-out;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.help-button:hover{
+    opacity: 100%;
+    padding: 4px;
+}
+
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/*******************************************************************************************************************************************************************/
+/*Styling for the screen that pops up when you press the "Help?" button:*/
+
+.information-screen {
+    position: fixed;
+    background-color: #ede7d9;
+    height: 50vh;
+    top: 25vh;
+    width: 70vw;
+    left: 15vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    backdrop-filter: blur(100px);
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-title {
+    padding-left: 5px;
+    padding: 5px;
+    color: #4b4237;
+}
+
+.info-close {
+    padding: 5px;
+    cursor: pointer;
+    background-color: #a49694;
+    color: #4b4237;
+}
+
+.info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    color: #7b6360;
+}
+
+.info li {
+    margin-bottom: 5px;
+}
+
+.Help-screen-filetypes{
+    color: #d5a021;
+}
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/*******************************************************************************************************************************************************************/
+/*Terminal styling below:*/
+
+.terminal {
+    padding: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 50vh;
+    background-color: rgb(66, 66, 66);
+    margin: 0vh;
+}
+
+#input-container{
+    color: black;
+}
+
+#display {
+    max-height: 45vh;
+    width: 100vw;
+    overflow-y: auto;
+    color: greenyellow;
+}
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/*******************************************************************************************************************************************************************/
+/*Styling for the text that will appear on the terminal:*/
+
+.add-info{
+    color: whitesmoke;
+}
+
+.error-info{
+    color: rgb(255, 128, 128);
+}
+
+.newLine{
+    margin-bottom: 15px;
+}
+
+p{
+    margin: 3px 2px;
+}
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/*******************************************************************************************************************************************************************/
+/*Styling for code-input, the field where you write your commands:*/
+
+input{
+    border: none;
+    background-color: rgb(66, 66, 66);
+    outline: none;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 5vh;
+    background:rgb(66, 66, 66);
+    color: greenyellow;
+}
+
+.code-input{
+    width: 100vw;
+    min-height: 32px;
+    max-height: 100%;
+}
+
+
+
+
+/*******************************************************************************************************************************************************************/
+/*******************************************************************************************************************************************************************/
+/*Styling for the text editor:*/
+
+.editor {
+    padding: 0%;
+    width: 100vw;
+    max-width: 100%;
+    height: 50vh;
+    background-color: rgb(29, 29, 29);
+    margin: 1px auto;
+}
+
+.t2{                                            /*The text area that will take input and save it to whatever file you open*/
+    border: none;
+    background-color: rgb(255, 128, 128);
+    outline: none;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 35vh;
+    background:rgb(29, 29, 29);
+    color: greenyellow;
+}
+
+button{                                         /*Save button*/
+    padding: 3px;
+    margin-left: 93.2vw;
+    color: green;
+    background-color:aquamarine;
+    border-radius: 4px;
+    float: right;
+}
+
+.editor-heading{                                /*Contains the heading "Text Editor", and info on which file is currently open*/
+    color: whitesmoke;
+    font-size: 2.2vmax;
+    text-align: center;
+    display:inline-flex;
+    align-items: center;
+}
+
+.heading{                                       /*"Text Editor"*/
+    margin-left: 10vw;
+    padding-left: 5vw;
+    background-color: rgb(41, 41, 41);
+    padding-right: 5vw;
+}
+
+.opened-info{                                   /*"Currently opened: "*/
+    padding-left: 5vw;
+    margin-left: 20vw;
+    background-color: rgb(41, 41, 41);
+}
+
+.what-open{                                     /*"Nothing" or "[filename]"*/
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: rgb(41, 41, 41);
+    max-width: 23vw;
+    height: 5vh;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
