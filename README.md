@@ -1,4 +1,4 @@
-# Linux Compiler
+# Linux Terminal
 
 This project provides an interactive platform to simulate a Linux compiler environment. It allows users to write, compile, and execute code in a simulated Linux terminal, offering an educational tool for learning and practicing Linux-based development.
 
